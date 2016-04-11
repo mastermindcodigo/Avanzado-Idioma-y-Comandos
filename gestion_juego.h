@@ -1,4 +1,4 @@
-int jugar_partida(int, int*, int*);
+int jugar_partida(int, int*, int*, char*, int);
 int establecer_nivel(int, int*, int*);
 int listar_historial(int*);
 void partida_normal(int, char*, int*);

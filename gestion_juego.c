@@ -3,11 +3,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <ctype.h>
+#include <string.h>
 #include <time.h>
 #include "gestion_juego.h"
 #include "idiomas.h"
 
-int jugar_partida(int modo, int *lifes, int *lengua){
+int jugar_partida(int modo, int *lifes, int *lengua, char *arg, int argument){
 
    if(modo==0){ //MODO NORMAL DE JUEGO
   
@@ -42,12 +43,16 @@ int jugar_partida(int modo, int *lifes, int *lengua){
     partida_normal(oportunidades, codigo, lengua);
     return 0;
   }
-  
+ 
   else{ //PARTIDA DE PRUEBA 
-  
-    char codigo_p[4]="1234";  
-    int oportunidades=*lifes;
-    partida_normal(oportunidades, codigo_p, lengua);  
+ int oportunidades=*lifes;
+    if(argument==1){
+    partida_normal(oportunidades, arg, lengua);
+    }
+    else{
+    char codigo_p[4]="1234";
+    partida_normal(oportunidades, codigo_p, lengua);
+    }
   }
   return 0;
 }

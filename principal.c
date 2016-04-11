@@ -18,7 +18,7 @@
 int main(int argc, char *argv[]){
 
   char opcion[800];
-  int error;
+  int error, argumento=0;
   int error2;
   int dificultad;
   int *lives;
@@ -44,10 +44,10 @@ int main(int argc, char *argv[]){
     }
     else {
       int x;
+      argumento=1;
       x=prueba(argv[1]);
       if(x==1)return 0;
-      else partida_normal(*lives, argv[1], lenguaje);
-      return 0;
+      //else partida_normal(*lives, argv[1], lenguaje, argumento);
     }
   }
 
@@ -95,13 +95,13 @@ int main(int argc, char *argv[]){
       dificultad=0;
       error=1;
       *vez=1;
-      jugar_partida(dificultad, lives, lenguaje); //MODO NORMAL DE JUEGO
+      jugar_partida(dificultad, lives, lenguaje, argv[1], argumento); //MODO NORMAL DE JUEGO
       break;
     }
     case PROBAR: {
       // fprintf(stdout," \nHas seleccionado Jugar partida de prueba\n\n");
       dificultad=1;
-      jugar_partida(dificultad, lives, lenguaje);
+      jugar_partida(dificultad, lives, lenguaje, argv[1], argumento);
       error=1;
       break;
     }
