@@ -1,0 +1,35 @@
+
+Escriba un número de 4 dígitos diferentes + ENTER: 
+La longitud de la apuesta es incorrecta
+Escriba un número de 4 dígitos diferentes + ENTER: 
+La longitud de la apuesta es incorrecta
+Escriba un número de 4 dígitos diferentes + ENTER: 
+La longitud de la apuesta es incorrecta
+Escriba un número de 4 dígitos diferentes + ENTER: 
+La longitud de la apuesta es incorrecta
+Escriba un número de 4 dígitos diferentes + ENTER: 
+La longitud de la apuesta es incorrecta
+Escriba un número de 4 dígitos diferentes + ENTER: 
+La longitud de la apuesta es incorrecta
+Escriba un número de 4 dígitos diferentes + ENTER: 
+Los dígitos de la apuesta deben ser diferentes
+Escriba un número de 4 dígitos diferentes + ENTER: 
+La apuesta sólo debe contener dígitos
+Escriba un número de 4 dígitos diferentes + ENTER: 
+Su apuesta es: 6543  <____>
+
+Escriba un número de 4 dígitos diferentes + ENTER: 
+Su apuesta es: 2109  <||__>
+
+Escriba un número de 4 dígitos diferentes + ENTER: 
+Su apuesta es: 2187  <**__>
+
+Escriba un número de 4 dígitos diferentes + ENTER: 
+Su apuesta es: 0897  <**||>
+
+Escriba un número de 4 dígitos diferentes + ENTER: 
+Su apuesta es: 0987  <****>
+
+
+Ha descubierto el código secreto (0987) en 5 intentos
+Ha obtenido 7.78 puntos

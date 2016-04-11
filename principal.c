@@ -33,7 +33,7 @@ int main(int argc, char *argv[]){
   *lenguaje=0;
 
   if(argc>=3){
-    printf("\nUso: ./programa [--help | código_prueba]\n");
+    printf("\nUso: ./principal [--help | codigo_prueba]\n");
     return 3;
   }
   else if(argc==2){

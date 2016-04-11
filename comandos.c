@@ -3,7 +3,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-
+ 
 void help(char *arg){
 
    FILE *help;
@@ -11,16 +11,16 @@ void help(char *arg){
   char argumento[6]="--help";
 
   if(strlen(arg)!=6){
-    printf("\nUso: ./programa [--help | código_prueba]");
+    printf("\nUso: ./principal [--help | codigo_prueba]");
     return;
   }
 
   for(indice1=0; indice1<6; indice1++){
     if(argumento[indice1]!=arg[indice1]){ //BUSCAMOS DIFERENCIAS ENTRE EL ARGUMENTO CORRECTO Y LO INTRODUCIDO POR EL USUARIO
-      printf("\nUso: ./programa [--help | código_prueba]");
+      printf("\nUso: ./principal [--help | codigo_prueba]");
       return; //FINALIZAMOS LA EJECUCION
     } 
-    //SI LLEGA HASTA AQUÍ EL ARGUMENTO INTRODUCIDO ES CORRECTO
+    //SI LLEGA HASTA AQUÃ EL ARGUMENTO INTRODUCIDO ES CORRECTO
   }
 	
   help=fopen("help.txt","r");
@@ -39,13 +39,13 @@ int prueba(char *arg){
   int indice1, indice2, error;
 
   if(strlen(arg)!=4) {
-    printf("\nLa longitud del código de prueba es incorrecta");
+    printf("\nLa longitud del cÃ³digo de prueba es incorrecta");
     return 1;
   }
   for(indice1=0; indice1<4; indice1++){
     if(arg[indice1]>='0'  &&  arg[indice1]<='9') continue;
     else{
-      printf("\nEl código de prueba sólo debe contener dígitos\n");
+      printf("\nEl cÃ³digo de prueba sÃ³lo debe contener dÃ­gitos\n");
       return 1;
     }
   }
@@ -60,7 +60,7 @@ int prueba(char *arg){
     }
   }
   if(error==1){
-	printf("\nLos dígitos del código de prueba deben ser diferentes\n");
+	printf("\nLos dÃ­gitos del cÃ³digo de prueba deben ser diferentes\n");
 	return 1;
   }
   return 0;
